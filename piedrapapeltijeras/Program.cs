@@ -10,9 +10,9 @@ class Program
         
         int rounds = 5;
         
-        Game game = new Game(player1, player2, rounds);
+        Jueguito jueguito = new Jueguito(player1, player2, rounds);
 
-        game.Play();
+        jueguito.Play();
         
         Console.WriteLine("La partida ha finalizado");
     }

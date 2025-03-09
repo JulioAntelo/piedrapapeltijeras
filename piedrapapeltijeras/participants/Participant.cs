@@ -4,7 +4,7 @@ public class Participant
 {
     
     public string Name { get; set; }
-    private List<string> _options = new List<string>{"rock", "paper", "scissors"};
+    private List<string> options = new List<string>{"rock", "paper", "scissors"};
 
 
     public Participant(string name)
@@ -16,8 +16,8 @@ public class Participant
     public string GetRandomOption()
     {
         Random random = new Random();
-        int index = random.Next(_options.Count);
-        return _options[index];
+        int index = random.Next(options.Count);
+        return options[index];
     }
     
 }
